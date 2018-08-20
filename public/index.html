@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Café San Clemente</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="Café de las montañas de Caldas">
+    <link rel="icon" href="images/cafe_san_clemente_favicon.ico">
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#00796B">
+
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Café San Clemente">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Café San Clemente">
+
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="images/manifest/icon-vampire-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-vampire-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-vampire-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-vampire-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-vampire-192x192.png">
+
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/manifest/icon-vampire-144x144.png">
+    <meta name="msapplication-TileColor" content="#00796B">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bundle.css">
+    <style>
+        .mdc-top-app-bar {
+            background-image: url("images/1073233-black-wood-panels.jpg");
+            background-size: 100% 100%;
+        }
+
+        /* Create a Parallax Effect */
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+
+        .bgimg-1 {
+            background-image: url('/images/maxresdefault.jpg');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+
+        .bgimg-2 {
+            background-image: url("/images/captura1.png");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+
+        .bgimg-3 {
+            background-image: url("/images/finca_rocio.jpg");
+            min-height: 400px;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="mdc-typography">
+    <!-- Header of the page -->
+    <header class="mdc-top-app-bar mdc-top-app-bar--prominent">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <!--a href="#" class="material-icons mdc-top-app-bar__navigation-icon menu">menu</a-->
+                <span class="mdc-top-app-bar__title">
+        <img alt="Café San Clemente" src="images/fincas_villareiro.png">
+      </span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+            </section>
+        </div>
+        <nav id="basic-tab-bar" class="mdc-tab-bar">
+            <a id="home_button" class="mdc-tab">Inicio</a>
+            <a id="fincas_button" class="mdc-tab">Fincas Villarreiro</a>
+            <a id="historia_button" class="mdc-tab">Historia Villarreiro</a>
+            <a id="productos_button" class="mdc-tab">Nuestros Productos</a>
+            <a id="certificaciones_button" class="mdc-tab">Certificaciones y reseñas</a>
+            <a id="eventos_button" class="mdc-tab">Eventos corporativos</a>
+            <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+    </header>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide">
+      <img alt="Café San Clemente" src="images/cafe_san_clemente_logo.png" class="logo_central">
+    </span>
+        </div>
+    </div>
+
+    <!-- Contenido de Somos Origen-->
+    <div class="mdc-layout-grid somos_origen_section home">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-3">
+                <div class="mdc-card">
+                    <p class="mdc-typography--headline4">Un café en las mañanas te conecta con tus sentidos</p>
+                </div>
+
+            </div>
+            <div class="mdc-layout-grid__cell--span-5">
+                <h1 class="mdc-typography--headline2">Somos de Origen</h1>
+                <p class="mdc-typography--body1"><span><b>El Café San Clemente</b></span> es cultivado en las fincas El Rubí, El Rocío, La Esmeralda, La Perla y El Zaro del municipio Colombiano de Belalcázar Caldas; situado a una altura entre 1.350 y 1.450 metros sobre el nivel del mar, en las montañas de la cordillera central.</p>
+                <p class="mdc-typography--body1">Belalcázar es conocido como el “Balcón del Paisaje” ya que es posible observar la cordillera occidental con el cerro Tatama; a sus pies los valles de los ríos Risaralda y Cauca; también la cordillera central con sus nevados de Ruiz, Santa Isabel y Tolima. También se observan 12 municipios de 6 departamentos.
+                </p>
+                <p class="mdc-typography--body1">La calidad de sus tierras, su clima y su riqueza hídrica, hacen de Belalcázar la cuna del café San Clemente, con sus características únicas.</p>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4">
+                <img alt="Cafés San Clemente" src="images/cafes_san_clemente_1.png" class="imagen_cafes">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container home">
+        <div class="w3-display-middle">
+            <!--span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span-->
+        </div>
+    </div>
+    <!-- Contenido de Nuestro Café-->
+    <div class="mdc-layout-grid nuestro_cafe_section home">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-4">
+                <h1 class="mdc-typography--headline2">Nuestro Café</h1>
+                <p class="mdc-typography--body1">Se adapta a diferentes tipos de mercado, ya sea nacional o internacional, gracias a una gran variedad de características como la curva de tostión y curcas de molienda teniendo en cuenta los deseos del cliente.</p>
+            </div>
+            <div class="mdc-layout-grid__cell--span-8">
+                <div class="mdc-card">
+                    <img alt="Nuestro Café" src="images/captura.png" class="imagen_cafes">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container" id="parallax">
+        <div class="w3-display-bottommiddle">
+            <!--span class="w3-xxlarge w3-text-white w3-wide">FINCAS VILLAREIRO</span-->
+        </div>
+    </div>
+
+    <div id="fincas" class="fincas" hidden>
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-3">
+                    <nav class="shrine-drawer mdc-drawer mdc-drawer--permanent fincas">
+                        <h6 class="shrine-title">FINCAS</h6>
+                        <div class="mdc-drawer__content">
+                            <nav class="mdc-list">
+                                <a class="mdc-list-item" href="#">
+                        EL ROCÍO
+                    </a>
+                                <a class="mdc-list-item" href="#">
+                        EL RUBI
+                    </a>
+                                <a class="mdc-list-item" href="#">
+                        EL ZAFIRO
+                    </a>
+                                <a class="mdc-list-item" href="#">
+                        LA ESMERALDA
+                    </a>
+                                <a class="mdc-list-item" href="#">
+                        LA PERLA
+                    </a>
+
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mdc-layout-grid__cell--span-6">
+                    <h1 class="mdc-typography--headline2">FINCA EL ROCÍO</h1>
+                    <br>
+                    <img class="balance" alt="Balance Finca el Rocio" src="images/balance_finca_rocio.png">
+                </div>
+                <div class="mdc-layout-grid__cell--span-3">
+                    <img class="balance" alt="Balance Finca el Rocio" src="images/caracteristicas_finca_rocio.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="historia"></div>
+    <div id="productos"></div>
+    <div id="certificaciones"></div>
+    <div id="eventos"></div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-7">
+                    <div id="googleMap" style="width:100%;height:250px;"></div>
+                </div>
+                <div class="mdc-layout-grid__cell--span-3">
+                    <img alt="Café San Clemente" src="images/fincas_villareiro.png"><br><br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> fincas@villarreiro.com
+                    <br> contactenos@villarreiro.com
+                    <br> villarreirocafesanclemente@gmail.com
+                    <br><br>
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Avenida Bolívar 8N-67<br> Edificio Armenia Hotel Oficina 309
+
+                </div>
+                <div class="mdc-layout-grid__cell--span-2">
+                    <br><br><br><br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                    <a href="tel:0367376121">(+576) 737 6121</a><br>
+                    <a href="tel:3147418116">(+57) 314 741 8116</a>
+
+                    <p class="mdc-typography--caption">Industria Colombiana<br>
+                    Registro sanitario INVIMA No. RSAQ15I304<br>
+                    1233 Código de Exportador</p>
+                    <a href="https://web.facebook.com/Caf%C3%A9-San-Clemente-1514769038636498/" target="_blank">
+                        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cafesanclemente/" target="_blank">
+                        <i class="fa fa-instagram w3-hover-opacity"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(4.5493, -75.659892);
+            var mapCanvas = document.getElementById("googleMap");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhSZ-weFobdKxuFZSDAuTIfarUwIFiAZw&callback=myMap"></script>
+
+    <script src="bundle.js" async></script>
+</body>
+
+</html>

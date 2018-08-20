@@ -1,0 +1,96 @@
+$mdc-theme-primary: #f17e34;
+$mdc-theme-on-primary: #fefefe;
+$mdc-theme-secondary: #f49c1f;
+$mdc-theme-on-secondary: #fefefe;
+$mdc-theme-surface: #242020;
+$mdc-theme-on-surface: #171717;
+$mdc-theme-background: #FFFFFF;
+$mdc-theme-on-background: #171717;
+
+@import "@material/button/mdc-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/tabs/mdc-tabs";
+@import "@material/menu/mdc-menu";
+@import "@material/typography/mdc-typography";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+}
+
+.section {
+    height: 100%;
+}
+
+.mdc-tab-bar {
+    .mdc-tab--active {
+        @include mdc-tab-label-ink-color(primary);
+    }
+    @include mdc-tab-bar-indicator-ink-color(primary);
+}
+
+.mdc-tab:not(.mdc-tab--active) {
+    @include mdc-tab-label-ink-color(on-secondary);
+}
+
+.logo_central {
+    width: 100%;
+}
+
+.mdc-card {
+    @include mdc-card-fill-color(surface);
+    @include mdc-card-corner-radius(32px);
+    color: #FFFBFA;
+    padding: 8px;
+    text-align: center;
+}
+
+.mdc-typography--body1 {
+    text-align: justify;
+}
+
+.mdc-typography--headline2 {
+    text-align: center;
+}
+
+.somos_origen_section {
+    background-color: #caccc9;
+}
+
+.nuestro_cafe_section {
+    background-color: #f3f1f1;
+}
+
+.imagen_cafes {
+    width: 100%;
+}
+
+.foo-button {
+    @include mdc-button-ink-color(teal);
+    @include mdc-states(teal);
+}
+
+.mdc-drawer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.shrine-title {
+    align-self: center;
+    margin: 8px auto;
+}
+
+.balance {
+    width: 100%;
+}

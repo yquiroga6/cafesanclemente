@@ -1,0 +1,30 @@
+{
+  "name": "cafe-san-clemente",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Café de origen",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress"
+  },
+  "author": "Gio Quiroga",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "@material/button": "^0.37.0",
+    "@material/textfield": "^0.37.0",
+    "@material/ripple": "^0.37.0",
+    "@material/top-app-bar": "^0.37.0"
+  }
+}
